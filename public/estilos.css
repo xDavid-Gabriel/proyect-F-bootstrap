@@ -1,0 +1,86 @@
+a {
+  text-decoration: none;
+}
+
+.font-serif {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.btn:focus {
+  box-shadow: none;
+  justify-content: ;
+}
+input {
+  border-radius: 7px;
+  height: 45px;
+  border: 2px solid rgb(195, 199, 202);
+}
+input:focus {
+  outline: none;
+}
+/*Pagina 1*/
+/*Hero*/
+.hero {
+  min-height: 100vh;
+}
+/*Boton*/
+.inicio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+}
+.inicio:hover {
+  color: rgb(37, 42, 65);
+}
+/*Pagina2*/
+.risas {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pagina2 {
+  min-height: 100vh;
+}
+/*Botones*/
+.propietario:hover {
+  color: white;
+}
+
+/*Pagina 3*/
+
+/*Botones*/
+.ingresar {
+  width: 100px;
+}
+
+.google__cuenta > img {
+  width: 25px;
+}
+@media (min-width: 992px) {
+  .risas {
+    height: auto;
+  }
+  .text-title {
+    transform: translate(0, -100%) !important;
+  }
+  .buscador {
+    top: 50%;
+    transform: translate(0, -10%);
+  }
+}
+.buscador > input {
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  border: 0;
+}
+.text-title {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
