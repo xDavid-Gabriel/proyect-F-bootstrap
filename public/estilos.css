@@ -7,18 +7,40 @@ a {
   font-weight: 800;
 }
 
+.btn {
+  padding: 6px;
+  align-self: end;
+}
+.btn > img {
+  width: 18px;
+}
 .btn:focus {
   box-shadow: none;
-  justify-content: ;
+  align-items: ;
 }
-input {
+input,
+select {
+  margin: 7px 0;
   border-radius: 7px;
   height: 45px;
   border: 2px solid rgb(195, 199, 202);
+  background: white;
 }
-input:focus {
+textarea {
+  margin: 7px 0;
+  border: 2px solid rgb(195, 199, 202);
+  background: white;
+  border-radius: 7px;
+  max-height: 200px;
+}
+input,
+textarea,
+select:focus {
   outline: none;
 }
+
+/*Slider*/
+
 /*Pagina 1*/
 /*Hero*/
 .hero {
@@ -51,17 +73,67 @@ input:focus {
   color: white;
 }
 
+.cartas {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
 /*Pagina 3*/
 
 /*Botones*/
 .ingresar {
   width: 100px;
+  align-items: ;
 }
-
 .google__cuenta > img {
   width: 25px;
 }
+
+/*Pagina 4*/
+.bienvenida {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Pagina5*/
+.pagina5 {
+  min-height: 100vh;
+}
+/*Pagina6*/
+.pagina-6 {
+  min-height: 100vh;
+}
+.publicar {
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
+.btn-publicar {
+  top: 10%;
+  left: 10%;
+}
+
+.contenido--form {
+  background: rgba(255, 255, 255, 0.582);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.formulario-publicar {
+  max-width: 500px !important;
+}
+
+@media (min-width: 768px) {
+  .cartas {
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 992px) {
+  /*Pagina2*/
   .risas {
     height: auto;
   }
@@ -71,6 +143,34 @@ input:focus {
   .buscador {
     top: 50%;
     transform: translate(0, -10%);
+  }
+  .cartas {
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /*Pagina6*/
+  .promocion {
+    font-size: 35px;
+    width: 325px;
+    top: 10%;
+    left: 3%;
+  }
+  .btn-publicar {
+    left: 85%;
+  }
+  .publicar {
+    height: 400px;
+  }
+  .contenido--form {
+    position: relative;
+    top: -10%;
+  }
+}
+@media (min-width: 1400px) {
+  /*Pagina5*/
+  .busca {
+    top: 18%;
   }
 }
 .buscador > input {

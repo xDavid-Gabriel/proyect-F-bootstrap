@@ -3,6 +3,7 @@ $theme-colors: (
   "secondary": hsl(35, 100, 58, 100%),
   "success": hsl(0, 0, 45, 100%),
   "info": hsl(190, 100, 38, 100%),
+  "warning": rgb(201, 201, 201),
 );
 
 //BOTONES
@@ -31,6 +32,7 @@ body {
   color: hsl(0, 0, 45, 100%);
   font-weight: 400;
   background: rgb(213, 227, 238);
+  font-size: 14px;
 }
 
 /*Botones circulares*/
@@ -55,6 +57,12 @@ body {
     width: 100%;
     height: 780px;
     object-fit: cover;
+  }
+}
+
+@media (min-width: 1400px) {
+  .position-xxl-absolute {
+    position: absolute;
   }
 }
 .primario {

@@ -1,9 +1,28 @@
+import { useState, useEffect } from "react";
+import { obtenerProductos } from "../service/productosService";
 import { Link } from "react-router-dom";
 
 //Aqui estan mis imagenes
 import imagenes from "../assets/imagenes";
+import { height } from "dom-helpers";
 
 export default function Pagina2() {
+  const [productos, setProductos] = useState([]);
+
+  const getProductos = async () => {
+    try {
+      const productosObtenidos = await obtenerProductos();
+      // console.table(productosObtenidos);
+      setProductos(productosObtenidos);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getProductos();
+  }, []);
+
   return (
     <section className="pagina2 d-flex align-items-center container">
       <div className="row justify-content-center">
@@ -27,7 +46,7 @@ export default function Pagina2() {
             </Link>
             <Link
               to="/pagina3"
-              className="ingresar mx-3 btn btn-secondary text-white"
+              className="ingresar mx-2 btn btn-secondary text-white"
             >
               Ingresar
             </Link>
@@ -35,92 +54,48 @@ export default function Pagina2() {
         </div>
 
         <div className="my-4 col-12">
-          <p >
+          <p>
             Acercate a tus clientes, amplia tu negocio, escoge aqui tu proximo
             punto de reparto
           </p>
         </div>
         {/* Estas son las tarjetas d-flex flex-column align-items-center */}
-
-        <div className=" col-12 col-sm-6 col-lg-3">
-          <img
-            className="card-img-top"
-            src={imagenes.img3_card1}
-            alt="cocina"
-          />
-
-          <p>
-            S/ 1,000 x mes
-            <br />
-            +S/ 600 Mantenimiento
-            <br />
-            Cocinas modernas lista para
-            <br />
-            cocinar y hacer [...]
-            <br />
-            Los olivos Lima
-          </p>
+        
+        <div className="cartas">
+        {productos.map(
+          (
+            { imagen, precio_mes, mantenimiento, descripcion, direccion },
+            i
+          ) => (
+           
+              <div className="col-12" key={i}>
+                <img
+                  className="card-img-top"
+                  src={imagen}
+                  alt="cocina"
+                  style={{
+                    height: "200px",
+                    objectFit: "cover",
+                    objectPosition: "center",
+                  }}
+                />
+                <p>
+                  <span className="text-primary fw-bold">Precio mensual:</span> $/{precio_mes}
+                  <br />
+                  <span className="text-primary fw-bold">Mantenimiento:</span> $/{mantenimiento}
+                  <br />
+                  <span className="text-primary fw-bold">Descripcion:</span> {descripcion}
+                  <br />
+                  cocinar y hacer [...]
+                  <br />
+                  <span className="text-primary fw-bold">Direccion:</span> {direccion}
+                </p>
+              </div>
+            
+          )
+        )}
         </div>
 
-        <div className=" col-12 col-sm-6 col-lg-3">
-          <img
-            className="card-img-top"
-            src={imagenes.img4_card2}
-            alt="cocina"
-          />
-
-          <p>
-            S/ 1,000 x mes
-            <br />
-            +S/ 600 Mantenimiento
-            <br />
-            Cocinas modernas lista para
-            <br />
-            cocinar y hacer [...]
-            <br />
-            Los olivos Lima
-          </p>
-        </div>
-
-        <div className=" col-12 col-sm-6 col-lg-3">
-          <img
-            className="card-img-top"
-            src={imagenes.img5_card3}
-            alt="cocina"
-          />
-
-          <p>
-            S/ 1,000 x mes
-            <br />
-            +S/ 600 Mantenimiento
-            <br />
-            Cocinas modernas lista para
-            <br />
-            cocinar y hacer [...]
-            <br />
-            Los olivos Lima
-          </p>
-        </div>
-
-        <div className=" col-12 col-sm-6 col-lg-3">
-          <img
-            className="card-img-top"
-            src={imagenes.img6_card4}
-            alt="cocina"
-          />
-
-          <p>
-            S/ 1,000 x mes
-            <br />
-            +S/ 600 Mantenimiento
-            <br />
-            Cocinas modernas lista para
-            <br />
-            cocinar y hacer [...]
-            <br />
-            Los olivos Lima
-          </p>
-        </div>
       </div>
     </section>
   );
