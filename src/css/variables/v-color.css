@@ -1,0 +1,22 @@
+html {
+  --primary: rgba(37, 43, 66, 1);
+
+  --secondary-2: rgba(0, 160, 193, 1);
+  --secondary-1: rgba(115, 115, 115, 1);
+
+  --secondary: var(--secondary-2);
+  --secondary-light: var(--secondary-1);
+
+  /* --link: var(--secondary-8);
+  --link-hover: var(--secondary-5); */
+}
+
+.h {
+  color: rgba(115, 115, 115, 1);
+  color: rgba(255, 166, 43, 1);
+  color: rgba(37, 43, 66, 1);
+
+  color: rgba(0, 160, 193, 1);
+  color: rgba(22, 105, 122, 1);
+  background: linear-gradient();
+}

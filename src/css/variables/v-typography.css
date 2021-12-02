@@ -1,0 +1,35 @@
+html {
+  /* Familia tipograficas */
+  --font-1: "Montserrat", sans-serif;
+  --weight: 400;
+  --weight-bold: 700;
+  /* --font-2: "Alata", sans-serif; */
+
+  /* Variables tipográficas */
+
+  --text-caption: 14px;
+  --text-note: 16px;
+  --text-base: 20px;
+  --text-subheader: 24px;
+  /* --text-title: 48px; */
+  --text-title: 40px;
+  /* --text-headline: 72px; */
+  --text-headline: 68px;
+  --text-display: 96px;
+  --text-jumbo: 144px;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-weight: ;
+    /* Variables tipográficas */
+    --text-caption: 12px;
+    --text-note: 14px;
+    --text-base: 16px;
+    --text-subheader: 20px;
+    --text-title: 24px;
+    --text-headline: 36px;
+    --text-display: 48px;
+    --text-jumbo: 60px;
+  }
+}
