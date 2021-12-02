@@ -19,7 +19,10 @@ import tres_puntos from "./img/tres-puntos.svg";
 import mapa from "./img/mapa.png";
 import calificacion from "./img/calificacion.png";
 import publicar from "./img/fondo-publicar.jpg";
+<<<<<<< HEAD
 import ImgCamera from "./img/icon_camera.png";
+=======
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 
 export default {
   img1: hero,

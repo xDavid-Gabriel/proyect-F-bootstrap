@@ -151,7 +151,11 @@
 
 /*Cards o tarjetas*/
 .text__clientes {
+<<<<<<< HEAD
   margin-top: 20px;
+=======
+  margin-top: -25px;
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 }
 .tarjetas {
   box-shadow: 2px 2px 6px gray;
@@ -232,6 +236,7 @@
   }
 }
 
+<<<<<<< HEAD
 @media (max-height: 640px) {
   .pagina2 {
     height: 60vh;
@@ -239,6 +244,8 @@
   
 }
 
+=======
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 /*(3) Tercera pagina*/
 
 .seccion-3 {
@@ -479,12 +486,23 @@ select:focus {
 
 /*(5) Quinta pagina*/
 
+<<<<<<< HEAD
 /* ####  Nuevos estilos agregados Pagina 5 ##### */
 
 .contenedor_p5{
   display: flex;
 }
 
+=======
+/*Nuevo estilo*/
+
+.contenedor_p5{
+  display: flex;
+  
+}
+
+/*Nuevo estilo*/
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 .pagina5_body{
   display: flex;
   min-height: 100vh;
@@ -492,6 +510,23 @@ select:focus {
   /*border: 1px solid rgb(212, 19, 154);*/
 }
 
+<<<<<<< HEAD
+=======
+/*Nuevo estilo*/
+.pagina5_head{
+  position: relative;
+}
+
+.pagina5 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+} 
+
+/*Nuevo estilo*/
+
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 .head_p5 {
   /*border: 1px solid blue;*/
   min-height: 30%;
@@ -503,11 +538,16 @@ select:focus {
 
 }
 
+<<<<<<< HEAD
+=======
+/*Nuevo estilo*/
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 .head_p5 img {
   max-width: 100%;
   height: auto;
 }
 
+<<<<<<< HEAD
 /* ######  Fin nuevos estilos agregados ####### */
 
 
@@ -531,27 +571,53 @@ select:focus {
 
 /* #### se cambio buscador_2 por buscador_p5 ####*/
 
+=======
+.buscador__2 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  border: 1px solid red;
+}
+
+/*se cambio buscador_2 por buscador_p5*/
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 .buscador__p5 > h3 {
   font-weight: var(--weight);
   width: 70%;
   font-size: 38px;
 }
 
+<<<<<<< HEAD
 /* #### se cambio buscador_2 por buscador_p5 ####*/
+=======
+/*se cambio buscador_2 por buscador_p5*/
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 .buscador__p5 h3 > span {
   font-weight: var(--weight-bold);
 }
 
+<<<<<<< HEAD
 /* #### Estilo agregado #### */
+=======
+/*se cambio buscador_2 por buscador_p5*/
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 .buscador__p5{
   padding: 1rem;
 }
 
+<<<<<<< HEAD
 /* #### se cambio buscador_2 por buscador_p5 ####*/
 .buscador__p5 > input {
   border: 0;
   display: block;
   width: 450px;
+=======
+/*se cambio buscador_2 por buscador_p5*/
+.buscador__p5 > input {
+  border: 0;
+  display: block;
+  
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
   padding: 10px;
   border-radius: 50px;
   margin: 25px 0;
@@ -559,6 +625,10 @@ select:focus {
   font-size: 15px;
 }
 
+<<<<<<< HEAD
+=======
+/*se cambio buscador_2 por buscador_p5*/
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 .buscador__p5 > input:focus {
   outline: none;
 }
@@ -569,6 +639,7 @@ select:focus {
   padding: 0.5rem;
 }
 
+<<<<<<< HEAD
 /* &&& Estos estilo no fueron modificados &&& */
 
 .pagina5_head{
@@ -585,6 +656,8 @@ select:focus {
 
 /* &&&&&&&&&&&&&& */
 
+=======
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 /*Botones*/
 
 .propietario__2 {
@@ -600,6 +673,7 @@ select:focus {
   font-size: 12px;
   position: relative;
   top: -10px;
+<<<<<<< HEAD
   /* Estilo agregado */
   font-weight: 600;
 }
@@ -611,6 +685,18 @@ select:focus {
 }
 
 
+=======
+  font-weight: 600;
+}
+
+/*Nueva propiedad agregada*/
+.propietario__2:hover{
+    background-color: rgb(126, 216, 208);
+    color: white;
+}
+
+/*font-Weight agregado*/
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 .ingresar__2 {
   background: rgba(255, 166, 43, 1);
   padding: 10px;
@@ -623,6 +709,7 @@ select:focus {
   font-size: 12px;
   position: relative;
   top: -10px;
+<<<<<<< HEAD
   /* Estilo agregado */
   font-weight: 600;
 }
@@ -636,6 +723,16 @@ select:focus {
 
 
 /*Slider*/
+=======
+  font-weight: 600;
+}
+
+/*Slider*/
+
+.carousel_p5{
+  padding: 1rem;
+}
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 .todo--slider {
   position: absolute;
   bottom: 55px;
@@ -699,8 +796,15 @@ select:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
   height: 160px;
   padding: 20px;
+=======
+  margin-top: 10px;
+  height: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 }
 
 .mapa,
@@ -710,8 +814,15 @@ select:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
   height: 200px;
   padding: 20px;
+=======
+  height: auto;
+  margin-top: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 }
 .mapa img {
   width: 250px;
@@ -722,8 +833,15 @@ select:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
   height: 150px;
   padding: 20px;
+=======
+  margin-top: 10px;
+  height: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 }
 .precio {
   font-weight: 500;
@@ -731,15 +849,22 @@ select:focus {
 }
 
 /*Botones*/
+<<<<<<< HEAD
 /* ### Estilo Modificado */
+=======
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 
 .contactar {
   background: var(--primary);
   color: white;
   border: 0;
+<<<<<<< HEAD
   /* Padding de 5 a 8 px */
   padding: 8px;
   /* width por max-width */
+=======
+  padding: 8px;
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
   max-width: 100%;
   display: flex;
   justify-content: space-around;
@@ -751,6 +876,7 @@ select:focus {
 .contactar img {
   height: 16px;
 }
+<<<<<<< HEAD
 
 /* ### Estilo Modificado #### */
 
@@ -758,6 +884,10 @@ select:focus {
   /* width por max-width 100% */
   max-width: 100%;
   /* agregado min-width */
+=======
+.compartir {
+  max-width: 100%;
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
   min-width: 2rem;
   background: rgba(228, 228, 228, 1);
   border: 0;
@@ -770,11 +900,17 @@ select:focus {
   height: 16px;
 }
 
+<<<<<<< HEAD
 /* #### Estilo modificado #### */
 .contenido__botones {
   display: flex;
   justify-content: center;
   /* estilo agreado */
+=======
+.contenido__botones {
+  display: flex;
+  justify-content: center;
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
   margin-left: -0.6rem;
 }
 
@@ -801,7 +937,25 @@ select:focus {
 
 /*Media querys de la pagina 5*/
 
+<<<<<<< HEAD
 /* ######  Media Query agregada  ######*/
+=======
+@media (max-width: 1246px) {
+  .buscador__2 > h3 {
+    position: relative;
+    top: 45px;
+  }
+  .buscador__2 > input {
+    border: 0;
+    margin-top: 120px;
+  }
+  .todo--slider {
+    bottom: 15px;
+  }
+}
+
+/*Media Query agregada*/
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 
 @media (max-width: 900px) {
   .contenedor_p5{
@@ -837,6 +991,7 @@ select:focus {
     justify-content: center;
   }
 }
+<<<<<<< HEAD
 /* #####  Fin query Pagina 5  ########*/
 
 @media (max-width: 1246px) {
@@ -852,6 +1007,9 @@ select:focus {
     bottom: 15px;
   }
 }
+=======
+/*Fin query*/
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 
 @media (max-width: 1043px) {
   .text-body {
@@ -1058,7 +1216,10 @@ h3 > span {
   align-items: center;
   justify-content: space-around;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 .area > label {
   display: block;
   color: var(--primary);
@@ -1072,6 +1233,7 @@ h3 > span {
   padding: 15px;
   margin-right: 25px;
 }
+<<<<<<< HEAD
 
 .ubicacion > input {
   height: 50px;
@@ -1084,12 +1246,17 @@ h3 > span {
 }
 
 
+=======
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 .amoblado,
 .textarea > label {
   display: block;
   color: var(--primary);
   font-weight: 600;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 }
 .textarea > textarea {
   width: 100%;
@@ -1105,7 +1272,10 @@ h3 > span {
 .selecionar--mueble {
   width: 100%;
   display: inline-block;
+<<<<<<< HEAD
   padding: 5px;
+=======
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 }
 
 .contenido--form > input,
@@ -1136,6 +1306,7 @@ input[type="file" i] {
   background: white;
 }
 
+<<<<<<< HEAD
 .ubicacion > label {
   display: block;
   color: var(--primary);
@@ -1150,6 +1321,8 @@ input[type="file" i] {
   margin-right: 25px;
 }
 
+=======
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 /*Media querys de la pagina 6*/
 
 @media (max-width: 900px) {
@@ -1195,10 +1368,13 @@ input[type="file" i] {
   .amoblado {
     width: 140px;
   }
+<<<<<<< HEAD
 
   .ubicacion > input {
     width: 80px;
   }
+=======
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 }
 
 @media (max-width: 424px) {
@@ -1231,10 +1407,13 @@ input[type="file" i] {
   .amoblado {
     width: 100%;
   }
+<<<<<<< HEAD
 
   .ubicacion > input {
     width: 100%;
   }
+=======
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 }
 
 @media (max-width: 357px) {
@@ -1248,6 +1427,7 @@ input[type="file" i] {
     font-size: 11px;
   }
 }
+<<<<<<< HEAD
 
 
 .svg-icon {
@@ -1304,3 +1484,5 @@ input[type="file" i] {
   margin-bottom: 4px;
   margin-right: 7px;
 }
+=======
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d

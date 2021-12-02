@@ -3,12 +3,21 @@ import {AuthContextProvider} from "../context/authContext"
 import { useParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
 
+<<<<<<< HEAD
 import { getProductos } from "../services/CardService";
 
 import Pagina5Head from "../Views/Pagina5Head"
 import Pagina5Cards from "../Views/Pagina5Cards"
 import Pagina5Carousel from "../Views/Pagina5Carousel";
 import Pagina5Navegacion from "../Views/Pagina5Navegacion";
+=======
+import { getProductos } from "../servicios/CardService";
+
+import Pagina5Head from "./Pagina5Head";
+import Pagina5Cards from "./Pagina5Cards"
+import Pagina5Carousel from "./Pagina5Carousel";
+import Pagina5Navegacion from "./Pagina5Navegacion";
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
 
 //Mis estilos css
 import "../css/estilos.css";

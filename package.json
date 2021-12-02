@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@emotion/react": "^11.6.0",
     "@emotion/styled": "^11.6.0",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -10,17 +11,33 @@
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "@mui/material": "^5.1.1",
+=======
+    "@sweetalert2/themes": "^5.0.8",
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
     "bootstrap": "^5.1.3",
+<<<<<<< HEAD
     "dotenv": "^10.0.0",
     "firebase": "^9.5.0",
+=======
+    "components": "^0.1.0",
+    "dotenv": "^10.0.0",
+    "firebase": "^9.5.0",
+    "history": "^5.1.0",
+    "leaflet": "^1.7.1",
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.3",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
     "react-router-dom": "^6.0.1",
+=======
+    "react-leaflet": "^3.2.2",
+    "react-router-dom": "^6.0.2",
+>>>>>>> 893c12494c01fa30667c5578b49eed638b399c9d
     "react-scripts": "4.0.3",
     "sweetalert2": "^11.2.1",
     "web-vitals": "^1.1.2"
@@ -37,16 +54,14 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ]
 }
