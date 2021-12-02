@@ -1,0 +1,24 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}
+.container {
+  padding-left: var(--container-padding);
+  /* --container-padding: 20px; */
+  padding-right: var(--container-padding);
+  /* --container-padding: 20px; */
+  max-width: var(--maxwidth); /*--maxwidth: 1440px;*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: var(--grid-main);
+  /*--grid-main: repeat(12, minmax(0, 1fr));*/
+  grid-auto-rows: min-content;
+  grid-gap: var(--grid-gap);
+  /* --grid-gap: 30px;*/
+}
