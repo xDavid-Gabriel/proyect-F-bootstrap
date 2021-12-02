@@ -479,31 +479,76 @@ select:focus {
 
 /*(5) Quinta pagina*/
 
-.pagina5 {
-  position: relative;
-}
-.imagen_5 {
-  position: relative;
-}
-.imagen_5 img {
-  width: 100%;
-  position: absolute;
+/* ####  Nuevos estilos agregados Pagina 5 ##### */
+
+.contenedor_p5{
+  display: flex;
 }
 
+.pagina5_body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  /*border: 1px solid rgb(212, 19, 154);*/
+}
+
+.head_p5 {
+  /*border: 1px solid blue;*/
+  min-height: 30%;
+  max-width: 100%;
+  background: url(../assets/img/fondo-pagina-5.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  object-fit: cover;
+
+}
+
+.head_p5 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ######  Fin nuevos estilos agregados ####### */
+
+
+/* #####  Estilos existentes modificados ##### */
+
+.pagina5 {
+  position: relative;
+  /* Líneas agregadas */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Estilo modificado */
 .buscador__2 {
   position: absolute;
   left: 20px;
+  /* estilo agregado */
+  top: 20px;
 }
-.buscador__2 > h3 {
+
+/* #### se cambio buscador_2 por buscador_p5 ####*/
+
+.buscador__p5 > h3 {
   font-weight: var(--weight);
   width: 70%;
   font-size: 38px;
 }
-.buscador__2 h3 > span {
+
+/* #### se cambio buscador_2 por buscador_p5 ####*/
+.buscador__p5 h3 > span {
   font-weight: var(--weight-bold);
 }
 
-.buscador__2 > input {
+/* #### Estilo agregado #### */
+.buscador__p5{
+  padding: 1rem;
+}
+
+/* #### se cambio buscador_2 por buscador_p5 ####*/
+.buscador__p5 > input {
   border: 0;
   display: block;
   width: 450px;
@@ -514,9 +559,31 @@ select:focus {
   font-size: 15px;
 }
 
-.buscador__2 > input:focus {
+.buscador__p5 > input:focus {
   outline: none;
 }
+
+/*Pagina 5 Cards*/
+
+.pagina5_cards{
+  padding: 0.5rem;
+}
+
+/* &&& Estos estilo no fueron modificados &&& */
+
+.pagina5_head{
+  position: relative;
+}
+
+.imagen_5 {
+  position: relative;
+}
+.imagen_5 img {
+  width: 100%;
+  position: absolute;
+}
+
+/* &&&&&&&&&&&&&& */
 
 /*Botones*/
 
@@ -533,7 +600,17 @@ select:focus {
   font-size: 12px;
   position: relative;
   top: -10px;
+  /* Estilo agregado */
+  font-weight: 600;
 }
+
+/* #####  Nuevo estilo agregado ######*/
+.propietario__2:hover{
+  background-color: rgb(126, 216, 208);
+  color: white;
+}
+
+
 .ingresar__2 {
   background: rgba(255, 166, 43, 1);
   padding: 10px;
@@ -546,7 +623,17 @@ select:focus {
   font-size: 12px;
   position: relative;
   top: -10px;
+  /* Estilo agregado */
+  font-weight: 600;
 }
+
+/* #### Estilo agregado ####*/
+.carousel_p5{
+  padding: 1rem;
+}
+
+
+
 
 /*Slider*/
 .todo--slider {
@@ -644,13 +731,16 @@ select:focus {
 }
 
 /*Botones*/
+/* ### Estilo Modificado */
 
 .contactar {
   background: var(--primary);
   color: white;
   border: 0;
-  padding: 5px;
-  width: 115px;
+  /* Padding de 5 a 8 px */
+  padding: 8px;
+  /* width por max-width */
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -661,11 +751,17 @@ select:focus {
 .contactar img {
   height: 16px;
 }
+
+/* ### Estilo Modificado #### */
+
 .compartir {
-  width: 50px;
+  /* width por max-width 100% */
+  max-width: 100%;
+  /* agregado min-width */
+  min-width: 2rem;
   background: rgba(228, 228, 228, 1);
   border: 0;
-  padding: 5px;
+  padding: 8px;
   border-radius: 7px;
   margin-left: 10px;
   cursor: pointer;
@@ -674,9 +770,12 @@ select:focus {
   height: 16px;
 }
 
+/* #### Estilo modificado #### */
 .contenido__botones {
   display: flex;
   justify-content: center;
+  /* estilo agreado */
+  margin-left: -0.6rem;
 }
 
 /*Detalles de cocinas*/
@@ -701,6 +800,44 @@ select:focus {
 }
 
 /*Media querys de la pagina 5*/
+
+/* ######  Media Query agregada  ######*/
+
+@media (max-width: 900px) {
+  .contenedor_p5{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .pagina5_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .carousel_p5{
+    min-height: 500px;
+    
+  }
+
+}
+
+@media (max-width: 540px) {
+  .contenedor_p5{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pagina5_cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+/* #####  Fin query Pagina 5  ########*/
 
 @media (max-width: 1246px) {
   .buscador__2 > h3 {

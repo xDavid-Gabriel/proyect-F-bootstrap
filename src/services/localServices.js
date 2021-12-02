@@ -62,4 +62,6 @@ const subirImagen = (imagen) => {
     });
 };
 
+
+
 export {obtenerLocal,obtenerLocalPorId ,crearLocal,subirImagen};
