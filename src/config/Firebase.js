@@ -1,6 +1,7 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/storage";
-/* import "firebase/compat/auth"; */
+// Agregado firebase auth
+import "firebase/compat/auth";
 
 const config = {
     apiKey: process.env.REACT_APP_APPI_KEY,
@@ -12,11 +13,13 @@ const config = {
 
 };
 
- 
+
 const fire = firebase.initializeApp(config);
 const storage = firebase.storage();
-/* const auth = firebase.auth(); */
 
-export { fire, firebase, storage };
+/* auth creado - Alan */
+const auth = firebase.auth();
+// auth exportado - alan
+export { fire, firebase, storage, auth };
 
 
