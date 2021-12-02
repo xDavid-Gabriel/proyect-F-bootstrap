@@ -633,7 +633,7 @@ select:focus {
 }
 
 
-/* ###### Fin de modficaciones ###### */
+
 
 /*Slider*/
 .todo--slider {
@@ -731,13 +731,16 @@ select:focus {
 }
 
 /*Botones*/
+/* ### Estilo Modificado */
 
 .contactar {
   background: var(--primary);
   color: white;
   border: 0;
-  padding: 5px;
-  width: 115px;
+  /* Padding de 5 a 8 px */
+  padding: 8px;
+  /* width por max-width */
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -748,11 +751,17 @@ select:focus {
 .contactar img {
   height: 16px;
 }
+
+/* ### Estilo Modificado #### */
+
 .compartir {
-  width: 50px;
+  /* width por max-width 100% */
+  max-width: 100%;
+  /* agregado min-width */
+  min-width: 2rem;
   background: rgba(228, 228, 228, 1);
   border: 0;
-  padding: 5px;
+  padding: 8px;
   border-radius: 7px;
   margin-left: 10px;
   cursor: pointer;
@@ -761,9 +770,12 @@ select:focus {
   height: 16px;
 }
 
+/* #### Estilo modificado #### */
 .contenido__botones {
   display: flex;
   justify-content: center;
+  /* estilo agreado */
+  margin-left: -0.6rem;
 }
 
 /*Detalles de cocinas*/
