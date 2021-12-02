@@ -1,0 +1,43 @@
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+iframe,
+video,
+audio {
+  max-width: 100%;
+  border: 0;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  /* background-color: var(--secondary-light); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: var(--weight-bold);
+  color: var(--primary);
+  font-family: var(--font-1);
+}
+
+p {
+  margin-top: 0;
+}

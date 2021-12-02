@@ -19,7 +19,6 @@ import tres_puntos from "./img/tres-puntos.svg";
 import mapa from "./img/mapa.png";
 import calificacion from "./img/calificacion.png";
 import publicar from "./img/fondo-publicar.jpg";
-import flecha_derecha from "./img/derecha.svg";
 
 export default {
   img1: hero,
