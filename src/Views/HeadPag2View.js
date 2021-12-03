@@ -12,13 +12,13 @@ export default function HeadPag2Service() {
   const [locales,setLocales]=useState([]);
   const [tablaLocal,setTablaLocal]=useState([]);
   const [busqueda,setBusqueda]=useState("");
- 
+
   const peticionGet=async()=>{
     try {
       const localesobtenidos=await obtenerLocal();
-     console.table(localesobtenidos); 
-    setTablaLocal(localesobtenidos);
-    setLocales(localesobtenidos);
+      console.table(localesobtenidos); 
+      setTablaLocal(localesobtenidos);
+      setLocales(localesobtenidos);
       
     } catch (error) {
       console.log(error);
@@ -80,7 +80,6 @@ export default function HeadPag2Service() {
         </div>
 
         <div className="container d-flex  h-100  ">
-                                   
             <div className="row">
                 {locales.map(card =>(
                         <div className="col-md-3" key ={card.id}>

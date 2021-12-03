@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import {AuthContext} from "../context/authContext";
 
+import imagenes from "../assets/imagenes";
+
 
 export default function Pagina5Navegacion() {
 
-    const {user, signOut, signIn} =useContext(AuthContext);
+    const {user, signOut, signIn} = useContext(AuthContext);
 
     return (
         <Navbar bg="primary" expand="lg" sticky="top">
@@ -22,9 +24,6 @@ export default function Pagina5Navegacion() {
                         </Link>
                         <Link className="nav-link" to="/pagina2">
                             Productos
-                        </Link>
-                        <Link className="nav-link" to="/pagina3">
-                            Sesión
                         </Link>
                         <Link className="nav-link" to="/pagina4">
                             Registro
@@ -55,8 +54,11 @@ export default function Pagina5Navegacion() {
 
                             </NavDropdown>
                         
-                        ): (
-                            <Link className="nav.link" to="/Pagina3" onClick={signIn} style={{color: "white"}}> Ingresar </Link> 
+                        ): (<button className="google__cuenta nav.link" onClick={signIn} style={{color: "white"}, {backgroundColor:"#c9f0ff"}}>
+                            <img src={imagenes.img8_google} alt="" />
+                            Ingresa con Google
+                            {/* // <button className="nav.link btn btn-danger" onClick={signIn} style={{color: "white"}}> Ingresar </button>  */}
+                            </button>
                         )}
                     </Nav>
                 </Navbar.Collapse>
