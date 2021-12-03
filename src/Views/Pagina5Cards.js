@@ -47,7 +47,7 @@ export default function Pagina5Cards({producto}) {
                 <div className="card-body">
                     <h4 className="card-title">Detalles</h4>
                     <p className="card-text">Area: {area}</p>
-                    <p className="card-text">Implementado: {/*{implementar ===true ? "Si" : "No"}*/}/</p>
+                    <p className="card-text">Implementado: Sí {/*{implementar ===true ? "Si" : "No"}*/}</p>
                     <p className="card-text"><small className="text-muted">{descripcion}</small></p>
                 </div>
             </div>
