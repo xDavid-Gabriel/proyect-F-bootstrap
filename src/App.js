@@ -16,20 +16,18 @@ import FormPublicar from "./components/FormPublicar";
 export default function App() {
   return (
     <>
-    
-<Router>
-   <Routes>
-        <Route path="/" element={<Header/>} />
-        <Route path="/Publicar" element={<Publicar />} />
-        <Route path="/pagina2" element={<Pagina2 />} />
-        <Route path="/pagina3" element={<Pagina3 />} />
-        <Route path="/pagina4" element={<Pagina4 />} />
-        <Route path="/pagina5" element={<Pagina5 />} />
-        <Route path="/FormPublicar " element={<FormPublicar />} />
-    </Routes>
-</Router>
+      <Router>
+          <Routes>
+              <Route path="/" element={<Header/>} />
+              <Route path="/Publicar" element={<Publicar />} />
+              <Route path="/pagina2" element={<Pagina2 />} />
+              <Route path="/pagina3" element={<Pagina3 />} />
+              <Route path="/pagina4" element={<Pagina4 />} />
+              <Route path="/pagina5" element={<Pagina5 />} />
+              <Route path="/FormPublicar " element={<FormPublicar />} />
+          </Routes>
+      </Router>
 
-    
     </>
   );
 }

@@ -6,7 +6,7 @@ import {AuthContext} from "../context/authContext";
 
 export default function Pagina5Navegacion() {
 
-    const {user, signOut, signIn} =useContext(AuthContext);
+    const {user, signOut, signIn} = useContext(AuthContext);
 
     return (
         <Navbar bg="primary" expand="lg" sticky="top">
@@ -56,7 +56,7 @@ export default function Pagina5Navegacion() {
                             </NavDropdown>
                         
                         ): (
-                            <Link className="nav.link" to="/Pagina3" onClick={signIn} style={{color: "white"}}> Ingresar </Link> 
+                            <Link className="nav.link" onClick={signIn} to="/Pagina3" style={{color: "white"}}> Ingresar </Link> 
                         )}
                     </Nav>
                 </Navbar.Collapse>
